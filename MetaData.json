@@ -1,0 +1,6 @@
+{
+  "Name": "ComparatorSelectionExplorerModule",
+  "Version": "0.0.1",
+  "Dependencies": ["CohortGeneratorModule"],
+  "TablePrefix": "cse_"
+}
