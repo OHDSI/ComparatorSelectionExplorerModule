@@ -19,10 +19,6 @@ createCseModuleSpecifications <- function(minExposureSize = 1000) {
   for (name in names(formals(createCseModuleSpecifications))) {
     analysis[[name]] <- get(name)
   }
-
-
-
-  checkmate::assert_file_exists("MetaData.json")
   moduleInfo <- ParallelLogger::loadSettingsFromJson("MetaData.json")
   specifications <- list(module = "ComparatorSelectionExplorerModule",
                          version = "0.0.1",
