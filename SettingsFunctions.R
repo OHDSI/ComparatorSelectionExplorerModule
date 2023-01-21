@@ -19,7 +19,6 @@ createCseModuleSpecifications <- function(minExposureSize = 1000) {
   for (name in names(formals(createCseModuleSpecifications))) {
     analysis[[name]] <- get(name)
   }
-  moduleInfo <- ParallelLogger::loadSettingsFromJson("MetaData.json")
   specifications <- list(module = "ComparatorSelectionExplorerModule",
                          version = "0.0.1",
                          remoteRepo = "github.com",
