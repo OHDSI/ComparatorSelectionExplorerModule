@@ -24,8 +24,8 @@ createCseModuleSpecifications <- function(minExposureSize = 1000) {
 
   checkmate::assert_file_exists("MetaData.json")
   moduleInfo <- ParallelLogger::loadSettingsFromJson("MetaData.json")
-  specifications <- list(module = moduleInfo$Name,
-                         version = moduleInfo$Version,
+  specifications <- list(module = "ComparatorSelectionExplorerModule",
+                         version = "0.0.1",
                          remoteRepo = "github.com",
                          remoteUsername = "ohdsi",
                          settings = analysis)
